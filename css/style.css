@@ -1,0 +1,481 @@
+/* == Reset == */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+	margin:0px; 
+	padding:0px;
+	text-align:center;
+}
+
+div {
+	display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* == Generic == */
+body {
+		font-family: helvetica, arial, sans-serif;
+		color: #676767;
+		font-size: 12px;
+		line-height: 17px;
+		background: white;
+		border-top: 7px solid #f5f5f5;
+	}
+
+    /* -- Headings -- */
+h1 {
+	font-family: 'Oswald', helvetica, sans-serif;
+	font-size: 1.5em;
+	padding: 20px 0;
+}
+h2 {
+	font-size: 1.2em;
+	padding: 15px 0;
+}
+h3 {
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+    /* -- Misc Block elements -- */
+p {
+	font-family: helvetica, sans-serif;
+	padding: 10px 0;
+	line-height: 1.3em;
+}
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+    /* -- Misc Inline elements -- */
+img {}
+em 
+	{font-style:italic;}
+strong 
+	{font-weight:bold;}
+
+    /* -- Links -- */
+a {
+	-webkit-transition: all 0.14s ease 0s;
+	-moz-transition: all 0.14s ease 0s;
+	-o-transition: all 0.14s ease 0s;
+	outline: none;
+}
+a:link {
+	text-decoration: none;
+	color: #484848;
+}
+a:visited {
+	color: #484848;
+}
+a:hover {
+	color: #F35B36
+}
+a:active {
+	color: #484848;
+}
+.clear::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+    /* -- Body Classes -- */
+    .browse {}
+    .item {}
+    .show {
+		}
+    .summary {}
+    .tags {}
+
+    /* -- Misc Classes */
+
+    .image {} /* items/browse  */
+
+    .description {}
+
+    .even {}
+    .odd {}
+
+        /* Navigation Classes*/
+
+		#search-wrap .current {
+		}
+		
+		#search-wrap {
+			float: right;
+			margin: 0;
+			padding: 42px 0 30px;		
+		}
+
+		#search-wrap a {
+			font-size: .8em;
+			float: right;
+		}
+		
+		#search-wrap ul {
+			margin: 0;
+			padding: 30px 0;
+			list-style-type: none;
+			float: right;
+		}
+		#search-wrap li {
+			display: inline;	
+		} 
+
+        /* Pagination Classes */
+        .pagination {}
+
+        .next {}
+        .previous {}
+
+        /* Items Classes*/
+        .browse-items-link {}
+
+        .featured {}
+
+        .element {}
+        .element-text {}
+
+        .item {}
+        .item-description {}
+        .item-img {}
+        .items-list {
+			height: 220px;
+		  text-align: justify;
+		  font-size: 0;
+		  min-width: 1000px;
+		}
+		
+		.items-list div {
+			width: 220px;
+		  height: 220px;
+		  display: inline-block;
+		}
+		
+/*		#items-list:after {
+		  content: '';
+		  width: 100%;
+		  display: inline-block;
+		}*/
+		
+        .item-meta
+        .items-nav
+        .item-pagination {}
+        .item-tags {}
+        .item-thumbnail {}
+        .item-title {}
+
+
+        /* Collections Classes */
+        .collection {}
+        .collection-description {}
+
+        /* Exhibits Classes */
+        .exhibit {}
+        .exhibit-description {}
+        .exhibit-tags {}
+
+        /* Microformats Classes */
+        .hentry {}
+
+        /* Search Classes */
+        .no-results {}
+
+        /* Tags Classes */
+        .tags {}
+
+        /* Tag Clouds */
+        .hTagcloud ul {}
+            .hTagcloud li {}
+
+            .popular a {}
+            .v-popular a {}
+            .vv-popular a {}
+            .vvv-popular a {}
+            .vvvv-popular a {}
+            .vvvvv-popular a {}
+            .vvvvvv-popular a {}
+            .vvvvvvv-popular a {}
+            .vvvvvvvv-popular a {}
+
+
+/* == Wrap == */
+#wrap {
+	width:85%;
+	margin:0px auto;
+	text-align:left;
+	padding:15px;
+	overflow: hidden;
+}
+
+/* == Header == */
+#header-wrapper {
+	width: 100%;
+	}
+header {
+	width: 85%;
+	padding: 0;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 2px solid #EEE;
+}
+	
+	#site-title {
+		font-family: 'Oswald', helvetica, arial, sans-serif;
+		font-size: 2.5em;
+		float: left;
+		margin-top: 35px;	
+	}
+	
+	#site-title a {
+		color: #079fcc;
+	}
+	
+	#site-title a:hover {
+		color: #F35B36;
+	}
+	
+	#primary-nav {
+		float: right;
+		margin: 0;
+		padding: 0;
+/*		line-height: 2em;
+*/	}
+	
+	#primary-nav ul {
+		margin: 0;
+		padding: 30px 0;
+		list-style-type: none;
+		float: right;
+	}
+	
+	#primary-nav .current {
+		color: white !important;
+		background-color: #F96E5B !important;
+	}
+	
+	#primary-nav ul li {
+		position: relative;
+		display: inline;
+		float: left;
+		margin: 0 0 0 -1px;
+	}
+	
+	#primary-nav ul li a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 400;
+		color: #676767;
+		padding: 17px 15px;
+		display: block;
+		float: left;
+	}
+	
+	#primary-nav a:hover, #primary-nav a:active {
+		background-color: #444;
+		color: white;
+	}
+	
+	input[type=search] {
+	-webkit-appearance: textfield;
+	}
+	input#search.textinput {
+		border: #484848 1px solid;
+		height: 1.5em;
+		font-family: "Helvetica", Arial, sans-serif;
+		margin-left: 5px;
+		padding-left: 10px;
+	}
+	input#submit_search {
+		color: white;
+		background-color: #F35B36;
+		border: none;
+		height: 2em;
+		
+	}
+
+/* == Content == */
+
+.element-set h2:first-child{
+	visibility: hidden;
+	height: 0px
+}
+
+	/*Circle Mask*/
+	#featured-item img, #featured-collection img {
+		overflow: hidden;
+		height: 296px;
+		width: 296px;
+		float: left;
+	}
+	
+	#featured-item, #featured-collection {
+		float: left;
+		width: 69%;
+		padding: 20px 0 45px 50px;
+		text-align: left;
+	}
+	
+	#featured-item p, #featured-collection p {
+		padding: 10px;
+		line-height: 1.7em;
+		
+	}
+	
+	#featured-item h2, #featured-collection h3 {
+		font-family: 'Oswald', helvetica, sans-serif;
+		font-size: 1.7em;
+		padding: 0 0 5px 10px;
+	}
+	
+	.feature-content {
+		width: 100%;
+		margin-right: 0;
+		float: left;
+		position: relative;
+		margin: 50px 0;		
+	}
+
+	.circle-mask {
+		-webkit-mask-box-image: url(../images/mask2.png);
+	}
+
+    /* Structure */
+    #content {
+		width: 100%;
+		}
+        #primary {
+			box-shadow: none;
+			padding: 0 0;
+			background-color: transparent;
+			width: 85%;
+			margin: 0 auto;
+			border-bottom: 1px solid #EEE;
+		}
+        #secondary {
+			box-shadow: none;
+			padding: 0 0;
+			background-color: transparent;
+			width: 85%;
+			margin: 0 auto;
+		}
+
+    /* General */
+    #recent-items {}
+
+    #pagination-top {}
+    #pagination-bottom {}
+
+    /* Navigation */
+	
+    #secondary-nav {}
+
+    /* Advanced Search */
+    #advanced-search-form {}
+        #submit_search_advanced {}
+
+    /* Items Pages */
+    #extended-metadata {}
+        #item-type {}
+
+    #item-metadata {}
+        #item-publisher {}
+        #item-creator {}
+        #item-description {}
+        #item-relation {}
+        #item-spatial-coverage {}
+        #item-rights {}
+        #item-source {}
+        #item-subject {}
+        #item-additional-creator {}
+        #item-format {}
+        #item-contributor {}
+        #item-rights-holder {}
+        #item-provenance {}
+        #item-date {}
+        #item-temporal-coverage {}
+        #item-date-added {}
+        #item-collection {}
+        #item-files {}
+        #item-tags {}
+        #item-citation {}
+
+    #next-item {}
+    #previous-item {}
+
+        /* Search Results */
+        #advanced_search_header {}
+        #primary #basic_search_header {}
+        #primary #submit_search {}
+
+    /* Exhibits Pages */
+    #exhibit-nav {}
+    #exhibit-summary {}
+    #exhibit-show {}
+
+    /* Collections Pages */
+    #collection-description {}
+    #collectors {}
+
+
+/* == Footer == */
+#footer {
+	float: left;
+	width: 100%;
+}
+
+#footer-text {
+	float: right;
+	font-size: .8em;
+	font-family: helvetica, sans-serif;
+}
+
+#footer-text a {
+	color: #484848;
+}
